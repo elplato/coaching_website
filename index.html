@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coaching mit Anni</title>
+  <title>Systemische Beratung und Coaching mit Anni | Persönliche Entwicklung</title>
+  <meta name="description" content="Erfahren Sie mehr über systemische Beratung und Coaching mit Anni. Individuelle Beratung für persönliche Entwicklung und Lösungen. Jetzt kostenfreies Kennenlerngespräch vereinbaren!">
+  <meta name="keywords" content="systemische Beratung, Coaching, persönliche Entwicklung, Familienaufstellung, Genogramm, Kennenlerngespräch, Wuppertal">
   <style>
     body {
       background-color: mintcream;
@@ -79,6 +81,19 @@
     .button:hover {
       background-color: #9932CC;
     }
+    textarea {
+      width: 100%;
+      max-width: 500px;
+      min-height: 50px;
+      resize: none;
+      overflow: hidden;
+    }
+    img.scalable {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -99,7 +114,7 @@
   <section id="startseite">
     <h2>Willkommen bei Coaching mit Anni</h2>
     <p><strong>Systemische Beratung</strong> bedeutet, dass wir den Menschen in Bezug zu seinem sozialen Umfeld betrachten. Als Beraterin nehme ich eine wertschätzende und nicht-wertende Haltung ein und unterstütze dich dabei, Experte für deine eigenen Lösungen zu werden. Dabei arbeiten wir beispielsweise auch mit deiner Familienaufstellung und deinem Genogramm, wenn du das möchtest.</p>
-    <img src="Anni1.JPG" alt="Anni" style="display: block; margin: 0 auto;">
+    <img src="Anni1.JPG" alt="Anni, systemische Beraterin, beim Coaching" class="scalable">
     <p><a href="#kontakt" class="button">Vereinbaren Sie jetzt Ihr kostenfreies Kennenlerngespräch!</a></p>
   </section>
 
@@ -107,9 +122,9 @@
     <h2>Über mich</h2>
     <p>Ich bin Anni, zertifizierte systemische Beraterin und Coach. Mit meiner einfühlsamen und lösungsorientierten Arbeitsweise unterstütze ich Sie dabei, Ihre persönlichen Ziele zu erreichen und Ihr volles Potenzial zu entfalten. Schon während meiner Ausbildung und danach durfte ich eine Vielzahl von Klienten begleiten, von Studierenden zu Ingenieuren, vom Jobsuchenden bis hin zu Managerin, zu den unterschiedlichsten Themen.</p>
     <div class="gallery">
-      <img src="Anni2.JPG" alt="Anni">
-      <img src="Anni3.JPG" alt="Anni">
-      <img src="Anni4.JPG" alt="Anni">
+      <img src="Anni2.JPG" alt="Anni, systemische Beraterin, in einem Gespräch">
+      <img src="Anni3.JPG" alt="Anni, systemische Beraterin, lächelnd">
+      <img src="Anni4.JPG" alt="Anni, systemische Beraterin, in ihrer Praxis">
     </div>
   </section>
 
@@ -142,7 +157,7 @@
   </section>
 
   <section id="anni5">
-    <img src="Anni5.JPG" alt="Anni" class="anni5">
+    <img src="Anni5.JPG" alt="Anni, systemische Beraterin, bei der Arbeit" class="anni5">
   </section>
 
   <footer>
@@ -152,6 +167,16 @@
       42117 Wuppertal
     </address>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const textarea = document.getElementById('nachricht');
+      textarea.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight) + 'px';
+      });
+    });
+  </script>
 
 </body>
 </html>
